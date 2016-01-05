@@ -1,0 +1,170 @@
+<html>
+    <!--Head-->
+    <head>
+        <title>Portto Belho - Contacto</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="shortcut icon" href="favicon.ico">
+        <style>
+            #map {
+                background-color: #CCC;
+                height:100%;
+                width:100%; 
+                align-content: center;
+                min-width:300px
+            }
+        </style>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="assets/js/mapHandler.js"></script>
+        <script src="ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    </head>
+
+    <!--Body-->
+    <body>
+
+        <!-- Page Wrapper -->
+        <div id="page-wrapper">
+
+            <!-- Header -->
+            <header id="header">
+                <h1><a href="index.html">Contacto</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li class="special">
+                            <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                            <div id="menu">
+                                <ul>
+                                    <li><a href="index.html">Inicio</a></li>
+                                    <li><a href="gallery.html">Galería</a></li>
+                                    <li><a href="services.html">Servicios</a></li>
+                                    <li><a href="contact.html">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Main -->
+            <article id="main">
+
+                <!-- Title -->
+                <header>
+                    <h2>Contáctanos</h2>
+                    <p>Envíanos tu consulta y será respondida a la brevedad</p>
+                </header>
+
+                <!-- Content -->
+                <section class="wrapper style5">
+                    <div class="inner">
+
+                        <div class="row">
+                            <div class="6u 12u$(medium)">
+                                <ul class="alt">
+                                    <h4>Información del Salón</h4>
+                                    <li><b>Dirección:</b> Alejandro Heredia 150</li>
+                                    <li><b>Teléfono Móvil:</b> (0381) 15 5588077</li>
+                                    <li><b>Teléfono Fijo:</b> (0381) 4261385</li>
+                                    <li><b>E-Mail:</b> sandradiaz0369@gmail.com</li>
+                                    <li></li>
+                                </ul>
+                            </div>
+
+                            <div class="6u 12u$(medium)">
+                                <div id="map"></div>
+                            </div>
+
+                        </div>
+                        <hr />
+                        <section>
+                            <h4>Formulario de contacto</h4>
+                            <form method="post" action="assets/php/send.php ">
+                                <div class="row uniform">
+
+                                    <!--Tipo de Evento-->
+                                    <div class="12u$">
+                                        <div class="select-wrapper">
+                                            <select name="category" id="demo-category">
+                                                <option value="">- Tipo de Evento -</option>
+                                                <option value="Bautismo">Bautismo</option>
+                                                <option value="Cumpleaños">Cumpleaños</option>
+                                                <option value="Comunión">Comunión</option>
+                                                <option value="Egresados">Egresados</option>
+                                                <option value="Casamiento">Casamiento</option>
+                                                <option value="Fiestas Infantiles">Fiestas Infantiles</option>
+                                                <option value="Otros">Otros</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!--Fecha de Evento-->
+                                    <div class="6u 12u$(small)">
+                                        <label for="year">Fecha de evento:</label>
+                                        <input type="text" name="year" id="year" value="" placeholder="Año" />
+                                        <input type="text" name="month" id="month" value="" placeholder="Mes" />
+                                        <input type="text" name="day" id="day" value="" placeholder="Día" />
+                                    </div>                                    
+
+                                </div>
+
+                                <div class="row uniform">
+                                    <!--Nombre-->
+                                    <div class="6u 12u$(xsmall)">
+                                        <input type="text" name="name" id="name" value="" placeholder="Nombre y Apellido" />
+                                    </div>
+
+                                    <!--Telefono-->
+                                    <div class="6u 12u$(xsmall)">
+                                        <input type="text" name="phone" id="phone" value="" placeholder="Teléfono" />
+                                    </div>
+
+                                    <!--Mail-->
+                                    <div class="6u$ 12u$(xlarge)">
+                                        <input type="email" name="email" id="email" value="" placeholder="Email" />
+                                    </div>
+
+                                    <!--Mensaje-->
+                                    <div class="12u$">
+                                        <textarea name="message" id="message" placeholder="Ingrese su Mensaje" rows="6"></textarea>
+                                    </div>
+
+                                    <!--Botones-->
+                                    <div class="12u$">
+                                        <ul class="actions">
+                                            <li><input type="submit" value="Enviar Consulta" class="special" /></li>
+                                            <li><input type="reset" value="Limpiar" /></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </section>
+            </article>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <li><a href="https://twitter.com/" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://www.facebook.com/Portto-Belho-Eventos-1464206153883072/?ref=br_rs" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://instagram.com/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="mailto:sandradiaz0369@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Portto Belho</li><li>Design: <a href="http://tufix.com.ar">Tufix Systems</a></li>
+                </ul>
+            </footer>
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+
+</html>
