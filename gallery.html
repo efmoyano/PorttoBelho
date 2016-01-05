@@ -1,0 +1,153 @@
+<html>
+    <!--Head-->
+    <head>
+        <title>Portto Belho Eventos - Galería</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script src="galleria/galleria-1.4.2.js"></script>
+        <link rel="stylesheet" href="galleria/themes/classic/galleria.classic.css">
+        <script src="galleria/themes/classic/galleria.classic.min.js"></script>
+        <!--<script src="galleria/plugins/galleria.history.min.js"></script>-->
+        <style>
+            .galleria{ 
+                height:100%;
+                width:100%; 
+                align-content: center;
+                min-width:300px
+            }
+        </style>
+    </head>
+
+    <!--Body-->
+    <body>
+
+        <!--Page Wrapper-->
+        <div id="page-wrapper">
+
+            <!--Header-->
+            <header id="header">
+                <h1><a href="index.html">Galería</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li class="special">
+                            <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                            <div id="menu">
+                                <ul>
+                                    <li><a href="index.html">Inicio</a></li>
+                                    <li><a href="gallery.html">Galería</a></li>
+                                    <li><a href="services.html">Servicios</a></li>
+                                    <li><a href="contact.html">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!--Content-->
+            <article id="main">
+                <header>
+                    <h2>Galería de Imágenes</h2>
+                    <p>Una imágen dice mas que mil palabras</p>
+                </header>
+
+                <!--Galleria-->
+                <div id="outer" >  
+                    <div id="inner">
+
+                        <div id="desiredDiv" class="galleria" align="center">
+                            <script type="text/javascript">
+
+//                                var images = [
+//                                    'images/Gallery/photo1.jpg',
+//                                    'images/Gallery/photo2.jpg',
+//                                    'images/Gallery/photo3.jpg',
+//                                    'images/Gallery/photo4.jpg',
+//                                    'images/Gallery/photo5.jpg',
+//                                    'images/Gallery/photo6.jpg',
+//                                    'images/Gallery/photo7.jpg',
+//                                    'images/Gallery/photo8.jpg',
+//                                    'images/Gallery/photo9.jpg',
+//                                    'images/Gallery/photo10.jpg',
+//                                    'images/Gallery/photo11.jpg',
+//                                    'images/Gallery/photo12.jpg',
+//                                    'images/Gallery/photo13.jpg',
+//                                    'images/Gallery/photo14.jpg',
+//                                    'images/Gallery/photo15.jpg',
+//                                    'images/Gallery/photo16.jpg',
+//                                    'images/Gallery/photo17.jpg',
+//                                    'images/Gallery/photo18.jpg',
+//                                    'images/Gallery/photo18.jpg',
+//                                    'images/Gallery/photo20.jpg',
+//                                    'images/Gallery/photo21.jpg',
+//                                    'images/Gallery/photo22.jpg',
+//                                    'images/Gallery/photo23.jpg',
+//                                    'images/Gallery/photo24.jpg',
+//                                    'images/Gallery/photo25.jpg',
+//                                    'images/Gallery/photo26.jpg',
+//                                    'images/Gallery/photo27.jpg',
+//                                    'images/Gallery/photo28.jpg'
+//                                ];
+
+                                var images = [
+                                    'images/Gallery/photo1.jpg',
+                                    'images/Gallery/photo2.jpg',
+                                    'images/Gallery/photo28.jpg'
+                                ];
+
+                                for (var i = 0; i < images.length; i++) {
+                                    $('#desiredDiv').append('<img src="' + images[i] + '" alt="" />');
+                                }
+
+                                //                                var dir = "images/Gallery/";
+                                //                                           
+                                //                                var fileextension = ".jpg";
+                                //                                $.ajax({
+                                //                                    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+                                //                                    url: dir,
+                                //                                    success: function (data) {
+                                //                                        //List all .png file names in the page
+                                //                                        $(data).find("a:contains(" + fileextension + ")").each(function () {
+                                //                                            var filename = this.href.replace(window.location.host, "").replace("http://", "");
+                                //                                            $("desiredDiv").append("<img src='" + dir + filename + "'>");
+                                //                                        });
+                                //                                    }
+                                //                                });
+
+                            </script>
+                        </div>
+                        <script>
+                            Galleria.run('.galleria');
+                        </script>
+                    </div>
+                </div>
+
+            </article>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <li><a href="https://twitter.com/" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://www.facebook.com/Portto-Belho-Eventos-1464206153883072/?ref=br_rs" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://instagram.com/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="mailto:sandradiaz0369@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Portto Belho</li><li>Design: <a href="http://tufix.com.ar">Tufix Systems</a></li>
+                </ul>
+            </footer>
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+
+</html>
