@@ -10,7 +10,7 @@
             $contenido .= "Nombre: " . $_POST["name"] . "\n";
             $contenido .= "Teléfono: " . $_POST["phone"] . "\n\n";
             $contenido .= "Tipo de Evento: " . $_POST["category"] . "\n\n";
-            $contenido .= "Fecha: " . $_POST["category"] . $_POST["year"] . $_POST["month"] . $_POST["day"] .  "\n\n";
+            $contenido .= "Fecha: ".$_POST["year"]."\\".$_POST["month"]."\\".$_POST["day"]."\\". "\n\n";
             $contenido .= "Email: " . $_POST["email"] . "\n\n";
             $contenido .= "Consulta: " . $_POST["message"] . "\n\n";
             $header = "From: contacto@porttobelhoeventos.com\nReply-To:" . $_POST["email"] . "\n";
