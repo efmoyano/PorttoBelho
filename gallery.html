@@ -10,7 +10,6 @@
         <script src="galleria/galleria-1.4.2.js"></script>
         <link rel="stylesheet" href="galleria/themes/classic/galleria.classic.css">
         <script src="galleria/themes/classic/galleria.classic.min.js"></script>
-        <!--<script src="galleria/plugins/galleria.history.min.js"></script>-->
         <style>
             .galleria{ 
                 height:100%;
@@ -61,65 +60,44 @@
                         <div id="desiredDiv" class="galleria" align="center">
                             <script type="text/javascript">
 
-//                                var images = [
-//                                    'images/Gallery/photo1.jpg',
-//                                    'images/Gallery/photo2.jpg',
-//                                    'images/Gallery/photo3.jpg',
-//                                    'images/Gallery/photo4.jpg',
-//                                    'images/Gallery/photo5.jpg',
-//                                    'images/Gallery/photo6.jpg',
-//                                    'images/Gallery/photo7.jpg',
-//                                    'images/Gallery/photo8.jpg',
-//                                    'images/Gallery/photo9.jpg',
-//                                    'images/Gallery/photo10.jpg',
-//                                    'images/Gallery/photo11.jpg',
-//                                    'images/Gallery/photo12.jpg',
-//                                    'images/Gallery/photo13.jpg',
-//                                    'images/Gallery/photo14.jpg',
-//                                    'images/Gallery/photo15.jpg',
-//                                    'images/Gallery/photo16.jpg',
-//                                    'images/Gallery/photo17.jpg',
-//                                    'images/Gallery/photo18.jpg',
-//                                    'images/Gallery/photo18.jpg',
-//                                    'images/Gallery/photo20.jpg',
-//                                    'images/Gallery/photo21.jpg',
-//                                    'images/Gallery/photo22.jpg',
-//                                    'images/Gallery/photo23.jpg',
-//                                    'images/Gallery/photo24.jpg',
-//                                    'images/Gallery/photo25.jpg',
-//                                    'images/Gallery/photo26.jpg',
-//                                    'images/Gallery/photo27.jpg',
-//                                    'images/Gallery/photo28.jpg'
-//                                ];
-
                                 var images = [
                                     'images/Gallery/photo1.jpg',
                                     'images/Gallery/photo2.jpg',
+                                    'images/Gallery/photo3.jpg',
+                                    'images/Gallery/photo4.jpg',
+                                    'images/Gallery/photo5.jpg',
+                                    'images/Gallery/photo6.jpg',
+                                    'images/Gallery/photo7.jpg',
+                                    'images/Gallery/photo8.jpg',
+                                    'images/Gallery/photo9.jpg',
+                                    'images/Gallery/photo10.jpg',
+                                    'images/Gallery/photo11.jpg',
+                                    'images/Gallery/photo12.jpg',
+                                    'images/Gallery/photo13.jpg',
+                                    'images/Gallery/photo14.jpg',
+                                    'images/Gallery/photo15.jpg',
+                                    'images/Gallery/photo16.jpg',
+                                    'images/Gallery/photo17.jpg',
+                                    'images/Gallery/photo18.jpg',
+                                    'images/Gallery/photo18.jpg',
+                                    'images/Gallery/photo20.jpg',
+                                    'images/Gallery/photo21.jpg',
+                                    'images/Gallery/photo22.jpg',
+                                    'images/Gallery/photo23.jpg',
+                                    'images/Gallery/photo24.jpg',
+                                    'images/Gallery/photo25.jpg',
+                                    'images/Gallery/photo26.jpg',
+                                    'images/Gallery/photo27.jpg',
                                     'images/Gallery/photo28.jpg'
                                 ];
 
                                 for (var i = 0; i < images.length; i++) {
                                     $('#desiredDiv').append('<img src="' + images[i] + '" alt="" />');
                                 }
-
-                                //                                var dir = "images/Gallery/";
-                                //                                           
-                                //                                var fileextension = ".jpg";
-                                //                                $.ajax({
-                                //                                    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-                                //                                    url: dir,
-                                //                                    success: function (data) {
-                                //                                        //List all .png file names in the page
-                                //                                        $(data).find("a:contains(" + fileextension + ")").each(function () {
-                                //                                            var filename = this.href.replace(window.location.host, "").replace("http://", "");
-                                //                                            $("desiredDiv").append("<img src='" + dir + filename + "'>");
-                                //                                        });
-                                //                                    }
-                                //                                });
-
                             </script>
                         </div>
                         <script>
+                            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
                             Galleria.run('.galleria');
                         </script>
                     </div>
